@@ -26,7 +26,7 @@ class Predictor:
         X_proc = preprocessor.transform_new_samples(df_input)
 
         raw_pred = model.predict(X_proc)[0]
-
+ 
         # Calculate prediction probabilities if supported
         probabilities = {}
         confidence = 0.0
